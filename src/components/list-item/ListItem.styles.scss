@@ -1,0 +1,65 @@
+@import "../../../src/variables.scss";
+
+.list-item {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  display: flex;
+  justify-content: space-between;
+
+  .info-container {
+    display: flex;
+    align-items: center;
+
+    .font-awesome {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 20px;
+      color: $green;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .task-title {
+    width: 300px;
+  }
+
+  .edit {
+    border: 1.5px solid $green;
+    color: $green;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+
+    &:active {
+      border: 1.5px solid $green;
+      color: $white;
+      background-color: $lightGreen;
+    }
+  }
+
+  .delete {
+    border: 1.5px solid $red;
+    color: $red;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+
+    &:active {
+        border: 1.5px solid $red;
+        color: $white;
+        background-color: $lightRed;
+    }
+}
+}

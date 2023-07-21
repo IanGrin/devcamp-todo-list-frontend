@@ -1,0 +1,30 @@
+@import "../../../src/variables.scss";
+
+.list-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+
+    .faIconHeader {
+        padding-left: 15px;
+    }
+
+    .create {
+        border: 1.5px solid $blue;
+        color: $blue;
+        text-transform: uppercase;
+    
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    
+        &:active {
+            border: 1.5px solid $blue;
+            color: $white;
+            background-color: $lightBlue;
+        }
+    }
+}

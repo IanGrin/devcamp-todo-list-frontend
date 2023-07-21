@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
+import "./Modal.styles.scss";
 
 const Modal = ({ mode, setShowModal, getData, task }) => {
   const editMode = mode === "edit" ? true : false;
@@ -37,8 +41,8 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
         body: JSON.stringify(data),
       });
       if (response.status === 200) {
-        setShowModal(false)
-        getData()
+        setShowModal(false);
+        getData();
       }
     } catch (error) {
       console.error(error);
@@ -61,13 +65,15 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
       <div className="modal">
         <div className="form-title-container">
           <h3>Let's {mode} Your To Do!</h3>
-          <button onClick={() => setShowModal(false)}>X</button>
+          <button onClick={() => setShowModal(false)}>
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
         </div>
 
         <form>
           <input
             required
-            maxLength={30}
+            maxLength={100}
             placeholder=" Your task goes here"
             name="title"
             value={data.title}

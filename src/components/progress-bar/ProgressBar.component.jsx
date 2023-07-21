@@ -1,3 +1,5 @@
+import "./ProgressBar.styles.scss"
+
 const ProgressBar = ({ progress }) => {
     return (
       <div className="outer-bar">
