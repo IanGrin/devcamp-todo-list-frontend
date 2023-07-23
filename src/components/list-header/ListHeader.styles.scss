@@ -1,30 +1,30 @@
 @import "../../../src/variables.scss";
 
 .list-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: rgba(0, 0, 0, 0.123) 1px solid;
+  border-bottom: rgba(0, 0, 0, 0.123) 1px solid;
 
-    .faIconHeader {
-        padding-left: 15px;
+  .moment-container {
+    margin-left: 27px;
+  }
+
+  .create {
+    border: 1.5px solid $blue;
+    color: $blue;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
     }
 
-    .create {
-        border: 1.5px solid $blue;
-        color: $blue;
-        text-transform: uppercase;
-    
-        &:hover {
-            background-color: $blue;
-            color: $white;
-        }
-    
-        &:active {
-            border: 1.5px solid $blue;
-            color: $white;
-            background-color: $lightBlue;
-        }
+    &:active {
+      border: 1.5px solid $blue;
+      color: $white;
+      background-color: $lightBlue;
     }
+  }
 }

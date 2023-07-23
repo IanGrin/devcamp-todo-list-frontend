@@ -1,21 +1,17 @@
 import { useState } from "react";
 import moment from "moment/moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faListCheck } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import Modal from "../modal/Modal.component";
 import "./ListHeader.styles.scss";
 
-const ListHeader = ({ listName, getData }) => {
+const ListHeader = ({ getData }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="list-header">
-      <h1>
-      {listName}
-      <FontAwesomeIcon className="faIconHeader" icon={faListCheck} />
-      </h1>
-      <h3>{moment().format('MMMM Do YYYY, h:mm:ss a')}</h3>
+      <h4 className="moment-container">{moment().format("MMMM Do YYYY, h:mm:ss a")}</h4>
       <div className="button-container">
         <button className="create" onClick={() => setShowModal(true)}>
           ADD NEW

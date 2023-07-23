@@ -52,14 +52,14 @@
     text-transform: uppercase;
 
     &:hover {
-        background-color: $red;
-        color: $white;
+      background-color: $red;
+      color: $white;
     }
 
     &:active {
-        border: 1.5px solid $red;
-        color: $white;
-        background-color: $lightRed;
+      border: 1.5px solid $red;
+      color: $white;
+      background-color: $lightRed;
     }
-}
+  }
 }

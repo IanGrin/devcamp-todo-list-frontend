@@ -1,7 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareCheck, faEraser, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquareCheck,
+  faEraser,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Modal from "../modal/Modal.component";
 import ProgressBar from "../progress-bar/ProgressBar.component";
