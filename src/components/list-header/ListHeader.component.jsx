@@ -11,7 +11,9 @@ const ListHeader = ({ getData }) => {
 
   return (
     <div className="list-header">
-      <h4 className="moment-container">{moment().format("MMMM Do YYYY, h:mm:ss a")}</h4>
+      <h4 className="moment-container">
+        {moment().format("MMMM Do YYYY, h:mm:ss a")}
+      </h4>
       <div className="button-container">
         <button className="create" onClick={() => setShowModal(true)}>
           ADD NEW

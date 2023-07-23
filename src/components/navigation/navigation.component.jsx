@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faListCheck, faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faListCheck, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
 import "./navigation.styles.scss";
 
@@ -19,7 +19,7 @@ const NavigationContainer = () => {
           <Link className="link-container" to="/calandar">
             <p>
               Calendar
-              <FontAwesomeIcon className="faIconHeader" icon={faCalendarDays} />
+              <FontAwesomeIcon className="faIconHeader" icon={faCalendarDay} />
             </p>
           </Link>
         </div>
