@@ -8,7 +8,7 @@ import CalendarPage from "./components/pages/Calendar.component";
 const App = () => {
   return (
     <div className="app">
-      <ParticlesBg type="cobweb" bg={true} num={200} range={400} />
+      <ParticlesBg type="circle" color="#33ddff" num={10} bg={true} />
       <NavigationContainer />
       <Routes>
         <Route index element={<Home />} />
