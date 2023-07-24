@@ -17,7 +17,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
   const postData = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/todos", {
+      const response = await fetch("https://git.heroku.com/devcamp-todo-list-backend.git/todos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -35,7 +35,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
   const editData = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/todo/${task.id}`, {
+      const response = await fetch(`https://git.heroku.com/devcamp-todo-list-backend.git/todo/${task.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
