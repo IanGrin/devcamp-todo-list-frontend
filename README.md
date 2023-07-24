@@ -1,4 +1,4 @@
-DevCamp To Do List Capstone Project - Frontend
+# DevCamp To Do List Capstone Project - Frontend
 
 1. Clone this repo
 
