@@ -7,7 +7,7 @@ import ListItem from "../list-item/ListItem.component";
 const Home = () => {
   const [tasks, setTasks] = useState(null);
   const getData = async () => {
-    axios.get("http://localhost:5000/todos").then((result) => {
+    axios.get("http://127.0.0.1:5000/todos").then((result) => {
       setTasks(result.data);
     });
   };

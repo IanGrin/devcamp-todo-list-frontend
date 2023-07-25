@@ -17,7 +17,7 @@ const ListItem = ({ task, getData }) => {
   const deleteItem = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/todo/${task.id}`,
+        `http://127.0.0.1:5000/todo/${task.id}`,
         {
           user_email: "",
           title: "",
