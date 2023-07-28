@@ -6,4 +6,6 @@
 
 3. Run `npm start`
 
-(heroku url goes here **)
+## Fully Deployed Project
+
+https://git.heroku.com/devcamp-todo-list-capstone.git
