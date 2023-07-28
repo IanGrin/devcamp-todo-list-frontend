@@ -8,4 +8,4 @@
 
 ## Fully Deployed Project
 
-https://git.heroku.com/devcamp-todo-list-capstone.git
+https://devcamp-todo-list-capstone-cdb8691597bd.herokuapp.com/
