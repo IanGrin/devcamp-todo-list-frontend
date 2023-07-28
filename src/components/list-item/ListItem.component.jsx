@@ -17,7 +17,7 @@ const ListItem = ({ task, getData }) => {
   const deleteItem = async () => {
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:5000/todo/${task.id}`,
+        `https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todo/${task.id}`,
         {
           user_email: "",
           title: "",
