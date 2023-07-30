@@ -8,10 +8,8 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
   const editMode = mode === "edit" ? true : false;
 
   const [data, setData] = useState({
-    user_email: editMode ? task.user_email : "ian@test.com",
     title: editMode ? task.title : null,
     progress: editMode ? task.progress : 50,
-    date: editMode ? task.date : new Date(),
   });
 
   const postData = async (e) => {
