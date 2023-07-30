@@ -7,15 +7,16 @@ import ListItem from "../list-item/ListItem.component";
 const Home = () => {
   const [tasks, setTasks] = useState(null);
   const getData = async () => {
-    axios.get("https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todos").then((result) => {
-      setTasks(result.data);
-    });
+    axios
+      .get("https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todos")
+      .then((result) => {
+        setTasks(result.data);
+      });
   };
 
   useEffect(() => {
     getData();
   }, []);
-
 
   //Sort by date
   const sortedTasks = tasks?.sort(

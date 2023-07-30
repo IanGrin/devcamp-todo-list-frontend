@@ -15,11 +15,14 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
   const postData = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todos", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todos",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
       if (response.status === 200) {
         console.log("WORKED");
         setShowModal(false);
@@ -33,11 +36,14 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
   const editData = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todo/${task.id}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        `https://devcamp-todo-list-backend-2b818c6fac87.herokuapp.com/todo/${task.id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
       if (response.status === 200) {
         setShowModal(false);
         getData();
